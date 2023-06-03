@@ -23,9 +23,11 @@ button.onclick = () => {
     text.innerHTML = null;
   }
   list.innerHTML = null;
+};
+try {
   for (let i = 0; i < localStorage.length; i++) {
     let value = localStorage.getItem(localStorage.key(i));
     console.info(localStorage.key(i), value);
     list.innerHTML += `<p class='label' title="${value}">${value}</p>`;
   }
-};
+} catch (error) {}
