@@ -1,5 +1,6 @@
 let list = document.getElementById("insert");
 let button = document.getElementById("getTodo");
+<<<<<<< HEAD
 const func = () => {
   try {
     list.innerHTML = null;
@@ -17,6 +18,19 @@ const del = (k) => {
   localStorage.removeItem(k);
   func();
 };
+=======
+const func=()=>{
+  try {
+    list.innerHTML = null;
+  for (let i = 0; i < localStorage.length; i++) {
+    let value = localStorage.getItem(localStorage.key(i));
+    console.info(localStorage.key(i), value);
+    list.innerHTML += `<p class='label' title="${value}">${value}</p>`;
+  }
+} catch (error) {}
+}
+func()
+>>>>>>> 3f50822033bad995354fb2a067d31197df25e593
 button.onclick = () => {
   let text = document.getElementById("getText");
   if (text.value === "") {
@@ -38,6 +52,13 @@ button.onclick = () => {
     localStorage.setItem(datetime, text.value);
     text.innerHTML = null;
   }
+<<<<<<< HEAD
 
   func();
 };
+=======
+  
+  func()
+};
+
+>>>>>>> 3f50822033bad995354fb2a067d31197df25e593
