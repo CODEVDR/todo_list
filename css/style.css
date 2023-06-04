@@ -100,9 +100,20 @@ body {
   background-color: white;
   border: 1px solid violet;
   color: violet;
-  justify-content: center;
+  justify-content: space-between;
 }
-
+#delete{
+  padding: 8px;
+  color: red;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#delete:hover,#delete:focus{
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  color: white;
+  background-color: red;
+}
 @media only screen and (max-width: 900px) {
   .center {
     justify-content: center;
