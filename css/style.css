@@ -91,6 +91,7 @@ body {
 }
 
 .label {
+  max-width: 390px;
   cursor: context-menu;
   display: flex;
   margin: 10px;
@@ -100,7 +101,6 @@ body {
   background-color: white;
   border: 1px solid violet;
   color: violet;
-  justify-content: space-between;
 }
 #delete{
   padding: 8px;
