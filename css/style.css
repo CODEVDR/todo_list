@@ -91,7 +91,7 @@ body {
 }
 
 .label {
-  width: 390px;
+  max-width: 390px;
   cursor: context-menu;
   display: flex;
   margin: 10px;
